@@ -23,3 +23,24 @@
         },
     }
 </script>
+
+<style scoped>
+    div {
+        padding: 60px;
+        border: 2px solid black;
+        margin-top: 40px
+    }
+
+    label {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>

@@ -1,17 +1,20 @@
 <template>
     <div class="container">
         <div class="row">
+            <div class="col-1"></div>
             <div class="col-6">
                 <div>
-                <Country
+                <CountryMini
                     v-for="country in filterCountries"
                     :key="country.name"
                     :country="country"
                 />
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-1"></div>
+            <div class="col-4">
                 <Search />
+                <Random />
             </div>
         </div>
     </div>
@@ -19,16 +22,18 @@
 
 <script>
     import axios from 'axios';
-    import Country from './Country.vue'
+    import CountryMini from './CountryMini.vue'
     import Search from './Search.vue'
+    import Random from './Random.vue'
 
     export default {
         components: {
-            Country,
-            Search
+            CountryMini,
+            Search,
+            Random
         },
         methods: {
-            async getCountries(){
+            getCountries(){
                 axios
                 .get('https://restcountries.eu/rest/v2/all')
                 .then(function( response ){
@@ -37,15 +42,9 @@
                 }.bind(this));
             },
 
-            getValue() {
-                console.log(this.$store.getters['getInputValue'])
-            }
-
         },
         computed: {
             filterCountries() {
-
-                console.log(this.$store.getters['getInputValue'])
 
                 if (this.$store.getters['getInputValue'].length < 1) {
                 return this.$store.getters['getCountries'];
@@ -59,6 +58,7 @@
         },
         beforeMount(){
             this.getCountries();
+            this.$store.commit('setInputValue', '')
         }
     }
 </script>

@@ -1,6 +1,6 @@
 <template>
 
-  <router-link to="/">
+  <router-link :to="{ name: 'country', params: { id: country.alpha3Code}}">
     <div>
       <h1>{{country.name}}</h1>
       <img :src="country.flag" alt="">
