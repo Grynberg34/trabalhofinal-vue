@@ -1,10 +1,14 @@
 <template>
+
+  <router-link to="/">
     <div>
       <h1>{{country.name}}</h1>
       <img :src="country.flag" alt="">
       <p>{{country.region}}</p>
       <p>{{country.subregion}}</p>   
     </div>
+  </router-link>
+
 </template>
 
 <script>

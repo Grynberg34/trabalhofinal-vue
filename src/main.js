@@ -4,6 +4,7 @@ import Vuex from 'vuex';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Home from './components/Home.vue'
 import App from './App.vue'
+import { store } from './store';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -28,5 +29,6 @@ Vue.use(IconsPlugin)
 new Vue({
   el: '#app',
   render: (h) => h(App),
-  router
+  router,
+  store
   }).$mount("#app");
