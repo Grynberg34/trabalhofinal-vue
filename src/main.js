@@ -4,6 +4,8 @@ import Vuex from 'vuex';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Home from './components/Home.vue'
 import CountryFull from './components/CountryFull.vue'
+import Regions from './components/Regions.vue'
+import Capitals from './components/Capitals.vue'
 import App from './App.vue'
 import { store } from './store';
 
@@ -17,6 +19,8 @@ Vue.use(Vuex);
 const routes = [
   { path: "/", component: Home },
   { path: "/country/:id", component: CountryFull, name: 'country'},
+  { path: "/regions", component: Regions},
+  { path: "/capitals", component: Capitals},
 ];
 
 const router = new VueRouter({
