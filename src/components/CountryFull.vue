@@ -17,12 +17,12 @@
         </div>
         <div class="col-4">
           <p>Region: {{country.region}}</p>
-          <p>Subregion: {{country.subregion}}</p>  
-          <p>Capital: {{country.capital}}</p>
+          <p v-if="country.subregion">Subregion: {{country.subregion}}</p>  
+          <p v-if="country.capital">Capital: {{country.capital}}</p>
           <p>Population: {{country.population}}</p>
           <p>Area: {{country.area}}</p>
           <p>Timezones: {{country.timezones}}</p>
-          <p>Borders: {{country.borders}}</p>
+          <p v-if="country.borders[0]">Borders: {{country.borders}}</p>
           <p>Languages: {{country.languages[0].name}} <span v-if="country.languages[1]" >| {{country.languages[1].name}}</span></p>
           <p>Currency: {{country.currencies[0].name}}</p>
         </div>      
