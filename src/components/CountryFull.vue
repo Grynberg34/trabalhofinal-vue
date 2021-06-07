@@ -23,8 +23,8 @@
           <p>Area: {{country.area}}</p>
           <p>Timezones: {{country.timezones}}</p>
           <p>Borders: {{country.borders}}</p>
-          <p>Languages: {{country.languages}}</p>
-          <p>Currencies: {{country.currencies}}</p>
+          <p>Languages: {{country.languages[0].name}} <span v-if="country.languages[1]" >| {{country.languages[1].name}}</span></p>
+          <p>Currency: {{country.currencies[0].name}}</p>
         </div>      
       </div>
     </div>
