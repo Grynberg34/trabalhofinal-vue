@@ -43,7 +43,7 @@
 
 <style scoped>
     div {
-        margin-top: 47px;
+        margin-top: 15px;
     }
 
     .link {

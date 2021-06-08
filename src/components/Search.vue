@@ -1,8 +1,7 @@
 <template>
 
-    <div class="pt-3">
-        <label><strong>Search Countries:</strong></label>
-        <input class="form-control" v-model="value" @input="getValue(value)">
+    <div class="p-3">
+        <input class="form-control" placeholder="Tip to Search countries" v-model="value" @input="getValue(value)">
     </div>
     
 </template>
