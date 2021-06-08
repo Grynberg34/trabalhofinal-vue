@@ -1,6 +1,6 @@
 <template>
     <div>
-        <router-link class="link" :to="{ name: 'country', params: { id: id}}">RANDOM COUNTRY</router-link>
+        <router-link class="btn btn-success btn-block" :to="{ name: 'country', params: { id: id}}">CLICK TO RANDOM COUNTRY</router-link>
     </div>
 </template>
 
@@ -43,9 +43,7 @@
 
 <style scoped>
     div {
-        padding: 60px;
-        margin-top: 40px;
-        border: 2px solid black;
+        margin-top: 47px;
     }
 
     .link {
