@@ -1,8 +1,7 @@
 <template>
     <div class="container">
-        <div class="row">
-
-
+        <div class="row pt-3">
+            
             <CountryCapital
                 v-for="country in sortedArray"
                 :key="country.name"

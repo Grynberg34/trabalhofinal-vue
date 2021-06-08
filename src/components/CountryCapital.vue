@@ -1,5 +1,4 @@
 <template>
-
   <div class="col-2">
     <router-link :to="{ name: 'country', params: { id: country.alpha3Code}}">
         <p>{{country.capital}}</p>  

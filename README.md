@@ -1,5 +1,10 @@
 # trabalho-final
 
+## Integrantes
+
+- Diego Henrique de Almeida Silveira
+- Francisco Grynberg Bignotto
+
 ## Project setup
 ```
 npm install
