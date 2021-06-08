@@ -8,11 +8,16 @@
         <Random />
       </div>
     </div>
-    <CountryMini
-      v-for="country in filterCountries"
-      :key="country.name"
-      :country="country"
-    />
+
+    <div class="container">
+      <div class="row">
+        <CountryMini
+          v-for="country in filterCountries"
+          :key="country.name"
+          :country="country"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
