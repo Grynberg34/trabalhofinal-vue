@@ -1,8 +1,8 @@
 <template>
 
-    <div>
-        <label>Search Countries:</label>
-        <input v-model="value" @input="getValue(value)">
+    <div class="pt-3">
+        <label><strong>Search Countries:</strong></label>
+        <input class="form-control" v-model="value" @input="getValue(value)">
     </div>
     
 </template>
@@ -25,22 +25,5 @@
 </script>
 
 <style scoped>
-    div {
-        padding: 60px;
-        border: 2px solid black;
-        margin-top: 40px
-    }
-
-    label {
-        display: block;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    input {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    
 </style>

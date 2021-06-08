@@ -1,33 +1,25 @@
 <template>
-
-  <router-link :to="{ name: 'country', params: { id: country.alpha3Code}}">
-    <div>
-      <h1>{{country.name}}</h1>
-      <img :src="country.flag" alt="">
-      <p>{{country.region}}</p>
-      <p>{{country.subregion}}</p>   
+  <router-link :to="{ name: 'country', params: { id: country.alpha3Code } }">
+    <div class="card" style="width: 18rem">
+      <img class="card-img-top" :src="country.flag" />
+      <div class="card-body">
+        <h5 class="card-title">{{ country.name }}</h5>
+        <p class="card-text">
+          {{ country.region }} / {{ country.subregion }}
+        </p>
+      </div>
     </div>
   </router-link>
-
 </template>
 
 <script>
-  export default {
-    props: {
-      country: Object,
-    },
-  };
+export default {
+  props: {
+    country: Object,
+  },
+};
 </script>
 
 <style scoped>
-    div {
-        padding: 40px;
-        border: 2px solid black;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
 
-    img {
-      width: 100px;
-    }
 </style>
