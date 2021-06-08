@@ -1,32 +1,36 @@
 <template>
-        <div class="container navbar">
-            <div class="row">
-                <div class="col-4"><h1>COUNTRIES</h1></div>
-                <div class="col-2"></div>
-                <div class="col-2"><router-link to="/">Home</router-link></div>
-                <div class="col-2"><router-link to="/regions">Browse by region</router-link></div>
-                <div class="col-2"><router-link to="/capitals">Browse by capital</router-link></div>
-            </div>
-        </div>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">COUNTRIES</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link"><router-link to="/">Home</router-link></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><router-link to="/regions">Browse by region</router-link></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><router-link to="/capitals">Browse by capital</router-link></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
-    export default {
-
-    }
+export default {};
 </script>
-
-<style scoped>
-
-    .navbar {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        border-bottom: 2px solid black;
-    }
-
-    .row {
-        width: 100%;
-    }
-
-</style>
