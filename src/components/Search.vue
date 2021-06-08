@@ -1,6 +1,6 @@
 <template>
 
-    <div class="p-3">
+    <div class="pt-3 pb-3">
         <input class="form-control" placeholder="Tip to Search countries" v-model="value" @input="getValue(value)">
     </div>
     

@@ -20,10 +20,14 @@
             <a class="nav-link"><router-link to="/">Home</router-link></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"><router-link to="/regions">Browse by region</router-link></a>
+            <a class="nav-link"
+              ><router-link to="/regions">Browse by region</router-link></a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link"><router-link to="/capitals">Browse by capital</router-link></a>
+            <a class="nav-link"
+              ><router-link to="/capitals">Browse by capital</router-link></a
+            >
           </li>
         </ul>
       </div>
@@ -34,3 +38,16 @@
 <script>
 export default {};
 </script>
+
+<style scoped>
+a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+    color: #cccccc;
+    text-decoration: none;
+
+}
+</style>
